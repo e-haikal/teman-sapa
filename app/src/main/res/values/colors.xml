@@ -14,6 +14,6 @@
     <color name="charcoalBlack">#222222</color>
     <color name="slateGray">#5B757E</color>
 
-<!--    Button color-->
+<!--    Button color if button required some form-->
     <color name="silverGray">#9E9E9E</color>
 </resources>
