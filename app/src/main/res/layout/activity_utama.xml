@@ -65,6 +65,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_bell"
+            android:backgroundTint="@color/oceanBlue"
+            app:tint="@color/white"
             app:layout_anchor="@id/bottomAppBar" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
