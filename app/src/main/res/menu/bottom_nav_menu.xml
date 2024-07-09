@@ -8,11 +8,14 @@
         android:title="Text to Speech"
         android:icon="@drawable/ic_tts"/>
 
+    <item android:id="@+id/placeholder"
+        android:title=""/>
+
     <item android:id="@+id/hiCategory"
         android:title="Category"
         android:icon="@drawable/ic_category"/>
 
     <item android:id="@+id/hiWhiteboard"
         android:title="Whiteboard"
-        android:icon="@drawable/ic_board"
+        android:icon="@drawable/ic_whiteboard"/>
 </menu>
