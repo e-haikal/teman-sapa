@@ -2,18 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
 <!--    This is the primary color-->
     <color name="oceanBlue">#0063CB</color>
 <!--    This is the secondary color-->
     <color name="skyBlue">#ABD6FF</color>
 <!--    This is bg frame color-->
     <color name="grayishBlue">#EEF1F6</color>
-
 <!--    This is the typography color-->
     <color name="charcoalBlack">#222222</color>
     <color name="slateGray">#5B757E</color>
-
 <!--    Button color if button required some form-->
     <color name="silverGray">#9E9E9E</color>
 </resources>

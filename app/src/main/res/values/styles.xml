@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Gaya untuk tombol utama -->
+    <style name="Button.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/oceanBlue</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Gaya untuk teks judul -->
+    <style name="Text.Title" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/charcoalBlack</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+</resources>

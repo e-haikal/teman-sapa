@@ -8,35 +8,46 @@
     android:orientation="vertical"
     tools:context=".UtamaActivity">
 
-<!--    Top navbar start-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:background="@color/oceanBlue">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/temansapa_logo"></ImageView>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/app_name"
-            android:fontFamily="@font/roboto_medium"
-            android:textColor="@color/white"
-            android:textSize="22sp"
-            android:layout_marginLeft="3dp"
-            android:gravity="center_vertical|start"></TextView>
-        <ImageView
-            android:id="@+id/contextMenuIv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/burger_menu"></ImageView>
-    </LinearLayout>
+<!--&lt;!&ndash;    Top navbar start&ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:paddingStart="16dp"-->
+<!--        android:paddingEnd="16dp"-->
+<!--        android:background="@color/oceanBlue">-->
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/temansapa_logo"></ImageView>-->
+<!--        <TextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="@string/app_name"-->
+<!--            android:fontFamily="@font/roboto_medium"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="22sp"-->
+<!--            android:layout_marginLeft="3dp"-->
+<!--            android:gravity="center_vertical|start"></TextView>-->
+<!--        <ImageView-->
+<!--            android:id="@+id/contextMenuIv"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/burger_menu"></ImageView>-->
+<!--    </LinearLayout>-->
+
+
+<!--    Header Section Start-->
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:layout_width=""-->
+<!--        android:layout_height=""-->
+
+
+
+<!--    Header Section End-->
+
 
 <!--    Bottom navbar start-->
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -67,7 +78,8 @@
             android:src="@drawable/ic_bell"
             android:backgroundTint="@color/oceanBlue"
             app:tint="@color/white"
-            app:layout_anchor="@id/bottomAppBar" />
+            app:layout_anchor="@id/bottomAppBar"
+            android:contentDescription="@string/fab_description"/>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

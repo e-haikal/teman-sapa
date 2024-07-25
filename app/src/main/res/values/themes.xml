@@ -1,9 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.TemanSapa" parent="Theme.MaterialComponents">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <!-- Tema utama aplikasi -->
+    <style name="Theme.TemanSapa" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Warna utama -->
+        <item name="colorPrimary">@color/oceanBlue</item>
+        <!-- Warna gelap utama untuk status bar -->
+        <item name="colorPrimaryDark">@color/black</item>
+        <!-- Warna aksen untuk elemen interaktif -->
+        <item name="colorAccent">@color/skyBlue</item>
+        <!-- Warna latar belakang aplikasi -->
+        <item name="colorSurface">@color/grayishBlue</item>
+        <!-- Warna teks di atas warna utama -->
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Warna teks di atas latar belakang -->
+        <item name="colorOnSurface">@color/charcoalBlack</item>
     </style>
-
-    <style name="Theme.TemanSapa" parent="Theme.MaterialComponents.Light.NoActionBar" />
 </resources>

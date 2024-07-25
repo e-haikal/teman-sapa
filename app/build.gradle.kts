@@ -47,6 +47,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
 //    ini dependensi navbar fab
-    implementation("com.google.android.material:material:1.13.0-alpha03")
+    implementation("com.google.android.material:material:1.13.0-alpha04")
 
 }
