@@ -61,12 +61,30 @@
             android:background="?attr/selectableItemBackgroundBorderless"/>
     </androidx.appcompat.widget.Toolbar>
 
+<!--DrawerLayout di bawah Toolbar-->
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <!-- Konten utama -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_frame">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity 1"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+    </FrameLayout>
 
 
-<!--    Header Section End-->
-
-
-<!--    Bottom navbar start-->
+    <!--    Bottom navbar start-->
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -99,5 +117,10 @@
             android:contentDescription="@string/fab_description"/>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
+
+<!--    Header Section End-->
+
+
 
 </LinearLayout>
