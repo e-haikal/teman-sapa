@@ -40,9 +40,26 @@
 
 
 <!--    Header Section Start-->
-<!--    <androidx.appcompat.widget.Toolbar-->
-<!--        android:layout_width=""-->
-<!--        android:layout_height=""-->
+<!--    Tambahkan Toolbar di sini-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <!--Tambahkan ImageButton di dalam Toolbar untuk menu-->
+        <ImageButton
+            android:id="@+id/toolbar_menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu"
+            android:tint="@color/white"
+            android:layout_gravity="end"
+            android:paddingEnd="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+    </androidx.appcompat.widget.Toolbar>
 
 
 
