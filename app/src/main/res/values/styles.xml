@@ -4,11 +4,74 @@
     <style name="Button.Primary" parent="Widget.MaterialComponents.Button">
         <item name="android:backgroundTint">@color/oceanBlue</item>
         <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item> <!--Menyesuaikan ukuran teks tombol-->
+        <item name="android:textAllCaps">false</item> <!--Tidak semua huruf kapital-->
     </style>
 
     <!-- Gaya untuk teks judul -->
     <style name="Text.Title" parent="TextAppearance.AppCompat.Large">
         <item name="android:textColor">@color/charcoalBlack</item>
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">20sp</item>
     </style>
+
+    <!--Gaya untuk paragraf-->
+    <style name="Text.Paragraf" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/charcoalBlack</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--Gaya untuk teks modal-->
+    <style name="Text.Modal" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/charcoalBlack</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--Gaya untuk judul dalam list-->
+    <style name="Text.ListTitle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/charcoalBlack</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--Gaya untuk ListItem dan teks penting-->
+    <style name="Text.Important" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/charcoalBlack</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Gaya untuk judul menu pada sidebar -->
+    <style name="Text.MenuTitle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/charcoalBlack</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Gaya untuk teks sekunder dan keterangan -->
+    <style name="Text.Secondary" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textColor">@color/slateGray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Gaya untuk tab -->
+    <style name="Text.Tab" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/charcoalBlack</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Gaya untuk teks form -->
+    <style name="Text.Form" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/charcoalBlack</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Gaya untuk teks error -->
+    <style name="Text.Error" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/charcoalBlack</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Gaya untuk widget FormControl -->
+    <style name="FormControl" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">@color/charcoalBlack</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
 </resources>
