@@ -6,10 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/skyBlue"
     tools:context=".UtamaActivity">
 
-<!--    Header Section Start-->
-<!--    Tambahkan Toolbar di sini-->
+    <!-- Header Section Start -->
+    <!-- Toolbar -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -18,7 +19,7 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
-        <!--Tambahkan ImageButton di dalam Toolbar untuk menu-->
+        <!-- ImageButton for menu -->
         <ImageButton
             android:id="@+id/toolbar_menu_button"
             android:layout_width="wrap_content"
@@ -28,108 +29,101 @@
             android:layout_gravity="end"
             android:paddingEnd="20dp"
             android:background="?attr/selectableItemBackgroundBorderless"/>
-
-
     </androidx.appcompat.widget.Toolbar>
+    <!-- Header Section End -->
 
-
-<!--DrawerLayout di bawah Toolbar-->
-<androidx.drawerlayout.widget.DrawerLayout
-    android:id="@+id/drawer_layout"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1">
-
-    <!-- Konten utama -->
-<!--    <FrameLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:id="@+id/content_frame">-->
-
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Activity 1"-->
-<!--            android:textSize="26sp"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:layout_gravity="center"/>-->
-<!--    </FrameLayout>-->
-
-    <!--Main content start-->
-    <!--Hero tab-->
-    <LinearLayout
+    <!-- DrawerLayout for main content -->
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="20dp"
-        android:padding="16dp"
-        android:background="@drawable/home_rounded_background">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-        <!--teks container-->
+        <!-- Main content -->
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:paddingEnd="8dp"> <!--Added padding for spacing-->
-            <TextView
-                android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Hero tab -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tambah Kata"
-                android:textColor="@color/white"
-                style="@style/Text.Title"/>
-            <TextView
-                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:padding="16dp"
+                android:background="@drawable/home_rounded_background">
+
+                <!-- Text container -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingEnd="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tambah Kata"
+                        android:textColor="@color/white"
+                        style="@style/Text.Title"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Tambah kata baru ke kategori pilihanmu"
+                        style="@style/Text.Paragraf"/>
+                </LinearLayout>
+
+                <!-- Button container -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TAMBAH"
+                        android:textColor="@color/oceanBlue"
+                        android:backgroundTint="@color/white"
+                        style="@style/Button.Primary"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Second content -->
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:text="Tambah kata baru ke kategori pilihanmu"
-                style="@style/Text.Paragraf"/>
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="testing"/>
+            </LinearLayout>
+
         </LinearLayout>
 
-        <!--Button container-->
-        <LinearLayout
+        <!-- Navigation View -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_vertical"
-            android:paddingStart="8dp">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TAMBAH"
-                android:textColor="@color/oceanBlue"
-                android:backgroundTint="@color/white"
-                style="@style/Button.Primary"/>
-        </LinearLayout>
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@drawable/rectangular_shape"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/top_nav_menu"/>
 
-    </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
 
-    <!--Konten kedua-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="testing"/>
-    </LinearLayout>
-    <!--Main content end-->
-
-    <!-- Navigation View -->
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="end"
-        android:background="@drawable/rectangular_shape"
-        android:fitsSystemWindows="true"
-        app:menu="@menu/top_nav_menu"/>
-
-    <!--    Bottom navbar start-->
+    <!-- Bottom navbar -->
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/bottomAppBar"
@@ -140,7 +134,7 @@
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottomNavigationView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 app:labelVisibilityMode="labeled"
                 android:background="@android:color/transparent"
@@ -156,13 +150,10 @@
             android:backgroundTint="@color/oceanBlue"
             app:tint="@color/white"
             app:layout_anchor="@id/bottomAppBar"
+            app:layout_anchorGravity="bottom|end"
+            android:layout_margin="16dp"
             android:contentDescription="@string/fab_description"/>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-</androidx.drawerlayout.widget.DrawerLayout>
-
-<!--    Header Section End-->
-
-
 
 </LinearLayout>
