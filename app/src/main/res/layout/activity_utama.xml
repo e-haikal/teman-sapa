@@ -56,21 +56,63 @@
 <!--    </FrameLayout>-->
 
     <!--Main content start-->
+    <!--Hero tab-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:padding="16dp"
+        android:background="@drawable/home_rounded_background">
+
+        <!--teks container-->
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingEnd="8dp"> <!--Added padding for spacing-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tambah Kata"/>
-
+                android:text="Tambah Kata"
+                android:textColor="@color/white"
+                style="@style/Text.Title"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Tambah kata baru ke kategori pilihanmu"
+                style="@style/Text.Paragraf"/>
         </LinearLayout>
 
+        <!--Button container-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TAMBAH"
+                android:textColor="@color/oceanBlue"
+                android:backgroundTint="@color/white"
+                style="@style/Button.Primary"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Konten kedua-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="testing"/>
     </LinearLayout>
     <!--Main content end-->
 
