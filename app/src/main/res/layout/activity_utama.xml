@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/skyBlue"
+    android:background="@color/grayishBlue"
     tools:context=".UtamaActivity">
 
     <!-- Header Section Start -->
@@ -25,9 +25,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_menu"
-            android:tint="@color/white"
             android:layout_gravity="end"
             android:paddingEnd="20dp"
+            android:contentDescription="Icon Menu"
             android:background="?attr/selectableItemBackgroundBorderless"/>
     </androidx.appcompat.widget.Toolbar>
     <!-- Header Section End -->
@@ -38,6 +38,16 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
+
+        <!-- Navigation View -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@drawable/rectangular_shape"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/top_nav_menu"/>
 
         <!-- Main content -->
         <LinearLayout
@@ -107,16 +117,6 @@
 
         </LinearLayout>
 
-        <!-- Navigation View -->
-        <com.google.android.material.navigation.NavigationView
-            android:id="@+id/nav_view"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="end"
-            android:background="@drawable/rectangular_shape"
-            android:fitsSystemWindows="true"
-            app:menu="@menu/top_nav_menu"/>
-
     </androidx.drawerlayout.widget.DrawerLayout>
 
     <!-- Bottom navbar -->
@@ -151,7 +151,7 @@
             app:tint="@color/white"
             app:layout_anchor="@id/bottomAppBar"
             app:layout_anchorGravity="bottom|end"
-            android:layout_margin="16dp"
+            android:layout_margin="30dp"
             android:contentDescription="@string/fab_description"/>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
