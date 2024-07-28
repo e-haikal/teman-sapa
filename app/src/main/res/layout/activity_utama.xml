@@ -26,6 +26,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_menu"
             android:layout_gravity="end"
+            android:padding="16dp"
             android:paddingEnd="20dp"
             android:contentDescription="Icon Menu"
             android:background="?attr/selectableItemBackgroundBorderless"/>
