@@ -54,53 +54,61 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <!-- Hero tab -->
-            <LinearLayout
+            <!-- CardView for "Tambah Kata" -->
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_margin="20dp"
-                android:padding="16dp"
-                android:background="@drawable/home_rounded_background">
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/white">
 
-                <!-- Text container -->
+                <!-- Inner LinearLayout for content -->
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:paddingEnd="8dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Tambah Kata"
-                        android:textColor="@color/white"
-                        style="@style/Text.Title"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:text="Tambah kata baru ke kategori pilihanmu"
-                        style="@style/Text.Paragraf"/>
-                </LinearLayout>
+                    android:orientation="horizontal"
+                    android:padding="16dp">
 
-                <!-- Button container -->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center_vertical"
-                    android:paddingStart="8dp">
-                    <Button
+                    <!-- Text container -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingEnd="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tambah Kata"
+                            android:textColor="@color/charcoalBlack"
+                            style="@style/Text.Title"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/charcoalBlack"
+                            android:text="Tambah kata baru ke kategori pilihanmu"
+                            style="@style/Text.Paragraf"/>
+                    </LinearLayout>
+
+                    <!-- Button container -->
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TAMBAH"
-                        android:textColor="@color/oceanBlue"
-                        android:backgroundTint="@color/white"
-                        style="@style/Button.Primary"/>
-                </LinearLayout>
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        android:paddingStart="8dp">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="TAMBAH"
+                            android:textColor="@color/white"
+                            style="@style/Button.Primary"/>
+                    </LinearLayout>
 
-            </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
             <!-- Second content -->
             <LinearLayout
