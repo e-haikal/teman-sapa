@@ -116,10 +116,15 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="16dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="testing"/>
+                    android:text="Pilih Kondisi Anda"
+                    style="@style/Text.Title"/>
+
+                <!--tampiil data kategori dari database:-->
+
             </LinearLayout>
 
         </LinearLayout>
